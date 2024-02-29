@@ -1,0 +1,106 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+/* every single element with its margins, paddings etc. will now be treated as a whole box for specifications like width, high etc.*/
+
+.container {
+    font-family: "PT Sans Narrow", sans-serif;
+    margin: 0 auto;
+    padding: 10px 10%;
+    max-width: 4000px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    font: 18px/2;
+}
+
+.dark {
+    color: rgb(208, 201, 168);
+    max-width: 4000px;
+    background-size: 100%;
+}
+
+.domki {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+}
+
+.subHeader {
+    width: 100%;
+    font-size: 25px;
+    text-shadow: 5px #888;
+}
+
+.addition {
+    color: rgb(198, 192, 189);
+}
+
+.element {
+    display: block;
+    width: 100%;
+    max-width: 4000px;
+    margin: 0 auto;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.atrakcje {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    align-items: space-around;
+}
+
+.turystyka {
+    width: 300px;
+}
+
+@media (max-width: 767px) {
+    .element {
+        width: 100%;
+        border: 4px solid rgba(114, 48, 4, 0.226);
+    }
+
+    .container {
+        font: 15px/2 'Oswald', sans-serif;
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    .list__item {
+        border: 4px solid rgba(114, 48, 4, 0.226);
+    }
+}
+
+@media (max-width: 1250px) {
+    .container {
+        background-size: 300%;
+    }
+    .dark {
+        background-size: 300%;
+    }
+}
+
+@media (min-width: 4000px) {
+    .container {
+        font-size: 75px;
+    }
+
+    .list__item {
+        padding: 75px;
+    }
+}

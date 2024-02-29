@@ -1,0 +1,39 @@
+.article {
+    color: #333;
+    font: 25px/2 'Oswald', sans-serif;
+}
+
+.article__header {
+    margin: 0px 10px;
+    color: rgb(17, 69, 117);
+    font: 35px/2;
+    text-indent: 50px;
+}
+
+.article--header {
+    color:rgb(17, 69, 117);
+    text-shadow: 2px 3px 3px #cfb2b2;
+    font-style: italic;
+}
+
+.article__header--background {
+    background-color: rgb(208, 190, 168);
+}
+
+.article__header--boldItalic {
+    font-weight: 1000;
+    font-style: italic;
+    text-shadow: 2px 3px 3px #cfb2b2;;
+}
+
+@media (max-width: 767px) {
+    .article__header {
+        font: 15px/2 'Oswald', sans-serif;
+    }
+}
+
+@media (min-width: 4000px) {
+    .article__header {
+        font-size: 75px;
+    }
+}

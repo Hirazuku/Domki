@@ -1,0 +1,51 @@
+.header {
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: rgb(17, 69, 117);
+    text-shadow: 2px 3px 3px #cfb2b2;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.nav__item {
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.nav__link {
+    color: rgb(38, 84, 153);
+    font-weight: 800;
+    font-size: 15px;
+    text-decoration: none;
+    /* nav will function as a block element */
+}
+
+.nav__link:hover {
+    background-color: rgba(161, 130, 61, 0.555);
+}
+
+.addition {
+    color: rgb(198, 192, 189);
+}
+
+@media (max-width: 767px) {
+    .nav {
+        width: 80%;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 4000px) {
+    .nav__link {
+        font-size: 75px;
+        padding: 25px;
+    }
+}

@@ -1,0 +1,146 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+/* every single element with its margins, paddings etc. will now be treated as a whole box for specifications like width, high etc.*/
+
+.body {
+    margin: 0 10%;
+    color: #333;
+    background-color: rgb(208, 201, 168);
+    font: 25px/2 'Oswald', sans-serif;
+    text-align: center;
+}
+
+.button {
+    padding: 5px;
+    margin: auto;
+    color: rgb(104, 62, 0);
+    background-color: rgba(109, 77, 8, 0.555);
+    font-weight: 800;
+    border: 5px solid rgba(109, 77, 8, 0.555);
+    border-radius: 5px;
+    box-shadow: 29px 14px 90px 2px rgba(109, 77, 8, 0.555);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.dark {
+    color: rgb(208, 201, 168);
+    background-color: rgb(0, 0, 0);
+}
+
+.header {
+    padding: 0 15px;
+    flex-basis: 100%;
+    color: rgb(189, 151, 80);
+    text-shadow: 2px 3px 3px #888;
+    background-color: rgba(1, 1, 1, 0.801);
+    display: block;
+}
+
+.subHeader {
+    width: 100%;
+    text-shadow: 5px #888;
+}
+
+.headingTwo {
+    font-weight: 800;
+    font-style: italic;
+}
+
+.nav {
+    padding: 25px;
+    margin: 0 10%;
+    color: rgb(104, 62, 0);
+    background-color: rgba(109, 77, 8, 0.555);
+    font-weight: 800;
+    border: 5px solid rgba(109, 77, 8, 0.555);
+    border-radius: 5px;
+    box-shadow: 29px 14px 90px=0 2px rgba(109, 77, 8, 0.555);
+    font-size: 35px;
+    text-decoration: none;
+    display: inline-block;
+    /* nav will function as a block element */
+}
+
+.addition {
+    color: rgb(198, 192, 189);
+}
+
+.element {
+    max-width: 850px;
+    border: 8px solid rgba(114, 48, 4, 0.226);
+    box-shadow: 29px 14px 90px 2px rgba(109, 77, 8, 0.555);
+    display: block;
+}
+
+.table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 29px 14px 90px 2px rgba(109, 77, 8, 0.555);
+}
+
+.tableCell {
+    border: 8px solid rgba(114, 48, 4, 0.226);
+    padding: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.tableHeader {
+    background-color: rgba(109, 77, 8, 0.555);
+}
+
+.tableSubHeader {
+    font-weight: 800;
+}
+
+.tableCell:hover {
+    background-color: rgba(112, 79, 64, 0.555);
+}
+
+.caption {
+    font-size: 30px;
+    font-weight: 900;
+    caption-side: top;
+    text-align: left;
+}
+
+.tableOverflow {
+    overflow-x: auto;
+}
+
+.list {
+    background-color: rgba(109, 77, 8, 0.247);
+    list-style-type: disc;
+}
+
+.link {
+    margin: 20px;
+    padding: 5px;
+    color: rgb(104, 62, 0);
+}
+
+.link:visited {
+    color: rgb(104, 62, 0);
+    list-style-type: disc;
+}
+
+.link:focus {
+    outline: 2px solid currentColor
+}
+
+.link:hover {
+    color: rgb(82, 5, 5);
+}
+
+.link:active {
+    color: rgb(160, 9, 9);
+}
