@@ -10,64 +10,32 @@ html {
 
 /* every single element with its margins, paddings etc. will now be treated as a whole box for specifications like width, high etc.*/
 
-.body {
-    margin: 0 10%;
-    color: #333;
-    background-color: rgb(208, 201, 168);
-    font: 25px/2 'Oswald', sans-serif;
-    text-align: center;
-}
-
-.button {
-    padding: 5px;
-    margin: auto;
-    color: rgb(104, 62, 0);
-    background-color: rgba(109, 77, 8, 0.555);
-    font-weight: 800;
-    border: 5px solid rgba(109, 77, 8, 0.555);
-    border-radius: 5px;
-    box-shadow: 29px 14px 90px 2px rgba(109, 77, 8, 0.555);
-    font-size: 15px;
-    text-decoration: none;
+.container {
+    font-family: "PT Sans Narrow", sans-serif;
+    margin: 0 auto;
+    padding: 10px 10%;
+    max-width: 4000px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    font: 18px/2;
 }
 
 .dark {
     color: rgb(208, 201, 168);
-    background-color: rgb(0, 0, 0);
+    max-width: 4000px;
+    background-size: 100%;
 }
 
-.header {
-    padding: 0 15px;
-    flex-basis: 100%;
-    color: rgb(189, 151, 80);
-    text-shadow: 2px 3px 3px #888;
-    background-color: rgba(1, 1, 1, 0.801);
-    display: block;
+.domki {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
 }
 
 .subHeader {
     width: 100%;
+    font-size: 25px;
     text-shadow: 5px #888;
-}
-
-.headingTwo {
-    font-weight: 800;
-    font-style: italic;
-}
-
-.nav {
-    padding: 25px;
-    margin: 0 10%;
-    color: rgb(104, 62, 0);
-    background-color: rgba(109, 77, 8, 0.555);
-    font-weight: 800;
-    border: 5px solid rgba(109, 77, 8, 0.555);
-    border-radius: 5px;
-    box-shadow: 29px 14px 90px=0 2px rgba(109, 77, 8, 0.555);
-    font-size: 35px;
-    text-decoration: none;
-    display: inline-block;
-    /* nav will function as a block element */
 }
 
 .addition {
@@ -75,72 +43,64 @@ html {
 }
 
 .element {
-    max-width: 850px;
-    border: 8px solid rgba(114, 48, 4, 0.226);
-    box-shadow: 29px 14px 90px 2px rgba(109, 77, 8, 0.555);
     display: block;
-}
-
-.table {
+    width: 100%;
+    max-width: 4000px;
     margin: 0 auto;
-    border-collapse: collapse;
-    box-shadow: 29px 14px 90px 2px rgba(109, 77, 8, 0.555);
-}
-
-.tableCell {
-    border: 8px solid rgba(114, 48, 4, 0.226);
-    padding: 15px;
-    text-align: left;
-    vertical-align: top;
-}
-
-.tableHeader {
-    background-color: rgba(109, 77, 8, 0.555);
-}
-
-.tableSubHeader {
-    font-weight: 800;
-}
-
-.tableCell:hover {
-    background-color: rgba(112, 79, 64, 0.555);
-}
-
-.caption {
-    font-size: 30px;
-    font-weight: 900;
-    caption-side: top;
-    text-align: left;
-}
-
-.tableOverflow {
-    overflow-x: auto;
 }
 
 .list {
-    background-color: rgba(109, 77, 8, 0.247);
-    list-style-type: disc;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    list-style-type: none;
+    flex-wrap: wrap;
 }
 
-.link {
-    margin: 20px;
-    padding: 5px;
-    color: rgb(104, 62, 0);
+.atrakcje {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    align-items: space-around;
 }
 
-.link:visited {
-    color: rgb(104, 62, 0);
-    list-style-type: disc;
+.turystyka {
+    width: 300px;
 }
 
-.link:focus {
-    outline: 2px solid currentColor
+@media (max-width: 767px) {
+    .element {
+        width: 100%;
+        border: 4px solid rgba(114, 48, 4, 0.226);
+    }
+
+    .container {
+        font: 15px/2 'Oswald', sans-serif;
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    .list__item {
+        border: 4px solid rgba(114, 48, 4, 0.226);
+    }
 }
 
-.link:hover {
-    color: rgb(82, 5, 5);
+@media (max-width: 1250px) {
+    .container {
+        background-size: 300%;
+    }
+    .dark {
+        background-size: 300%;
+    }
 }
 
-.link:active {
-    color: rgb(160, 9, 9);
+@media (min-width: 4000px) {
+    .container {
+        font-size: 75px;
+    }
+
+    .list__item {
+        padding: 75px;
+    }
 }
