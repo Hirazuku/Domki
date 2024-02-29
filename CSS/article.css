@@ -11,6 +11,8 @@
 }
 
 .article--header {
+    font-size: 35px;
+    font-weight: 800;
     color:rgb(17, 69, 117);
     text-shadow: 2px 3px 3px #cfb2b2;
     font-style: italic;

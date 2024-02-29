@@ -1,6 +1,6 @@
 .header {
     font-family: "PT Sans Narrow", sans-serif;
-    font-size: 18px;
+    font-size: 25px;
     text-align: center;
     color: rgb(17, 69, 117);
     text-shadow: 2px 3px 3px #cfb2b2;
@@ -23,7 +23,7 @@
 .nav__link {
     color: rgb(38, 84, 153);
     font-weight: 800;
-    font-size: 15px;
+    font-size: 20px;
     text-decoration: none;
     /* nav will function as a block element */
 }

@@ -17,7 +17,7 @@ html {
     max-width: 4000px;
     color: #000000;
     background-color: rgb(255, 255, 255);
-    font: 18px/2;
+    font-size: 18px;
 }
 
 .dark {
@@ -34,7 +34,7 @@ html {
 
 .subHeader {
     width: 100%;
-    font-size: 25px;
+    font-size: 5px;
     text-shadow: 5px #888;
 }
 
@@ -60,13 +60,16 @@ html {
 }
 
 .atrakcje {
-    display: grid;
-    grid-template-columns: 3fr 3fr;
+    display: flex;
+    grid-template-columns: 300px 300px 300px;
     align-items: space-around;
+    flex-wrap: wrap;
 }
 
 .turystyka {
     width: 300px;
+    height: 200px;
+    padding: 0 10px;
 }
 
 @media (max-width: 767px) {
