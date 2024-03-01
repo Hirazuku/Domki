@@ -17,12 +17,18 @@
     font-size: 25px;
     text-indent: 50px;
     padding: 10px;
+    text-shadow: 2px 3px 3px #cfb2b2;
 }
 
 .article__subheader--boldItalic {
     font-weight: 1000;
     font-style: italic;
-    text-shadow: 2px 3px 3px #cfb2b2;;
+}
+
+.dark {
+    color: rgb(255, 255, 255);
+    max-width: 4000px;
+    background-color: #000000;
 }
 
 @media (max-width: 767px) {
