@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="images/title.png">
+    <meta property="og:image" content="images/Logo_ElKowalczyk.png">
     <title>Spiskie Tarasy</title>
     <link rel="icon" href="images/Logo_ElKowalczyk.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -19,9 +19,6 @@
     <link href="CSS/article.css" rel="stylesheet">
     <link href="CSS/form.css" rel="stylesheet">
     <script defer src="js/script.js">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
@@ -61,21 +58,20 @@
     </header>
     <main class="container">
         <button class="button">Włącz <span class="themeName">ciemny</span> motyw</button>
-        <p>
-            <label> Wyszukaj: <input name="Wyszukiwarka" value="Kontakt"></label>
-            <button>Szukaj</button>
-        </p>
         <form action="https://postman-echo.com/post" method="POST">
-            </span>
+            <p>
+                <label> Wyszukaj: <input name="Wyszukiwarka" value="Kontakt"></label>
+                <button>Szukaj</button>
+            </p>
         </form>
-        <article class="article article--background">
-            <h1 class="article article--header">"Spiskie Tarasy"</h1>
-            <h2 class="subheader" id="o-nas">O nas</h2>
-            <p><img class="element" src="images/Domki.jpg" alt="Magister Inżynier"></p>
-            <div class="article__header article__header--boldItalic">
+        <article class="article">
+            <h1 class="article article__header">"Spiskie Tarasy"</h1>
+            <h2 id="o-nas">O nas</h2>
+            <p><img class="element" src="images/Domki.jpg" alt="Zdjęcie działki"></p>
+            <div class="article__subheader article__subheader--boldItalic">
                 Zapraszamy do naszych domków letniskowych w Niedzicy!
             </div>
-            <div class="article__header">Nowopowstałe domki w pięknej miejscowości, jaką jest Niedzica, czekają na
+            <div class="article__subheader">Nowopowstałe domki w pięknej miejscowości, jaką jest Niedzica, czekają na
                 lokatorów. Zapraszamy zarówno w wakacje jak i zimą, a także poza sezonem. Jesteśmy na Was otwarci cały
                 rok.
             </div>
@@ -83,10 +79,9 @@
         <hr>
         <section>
             <h2 id="domki">Prezentacja domków</h2>
-            <div class="domki"><img class="element domki" src="images/Elewacja południowa1.png"
-                    alt="Elewacja południowa">
+            <div class="houses"><img class="element" src="images/Elewacja południowa1.png" alt="Elewacja południowa">
                 <ol class="list">
-                    <li class="list__item"><b>Schemat domku 5mx7m: </b>
+                    <li><b>Schemat domku 5mx7m: </b>
                         <ul>
                             <li>Max dla 5 osób (jedno posłanie sofa na parterze)</li>
                             <li>Parter (pow. uż. 24,97m2): </li>
@@ -112,31 +107,28 @@
                         </ul>
                 </ol>
             </div>
-            <div class="domki"><img class="element" src="images/Rzut parteru1.png" alt="Rzut parteru">
-                <img class="element domki" src="images/Rzut poddasza1.png" alt="Rzut parteru">
+            <div class="houses"><img class="element" src="images/Rzut parteru1.png" alt="Rzut parteru">
+                <img class="element" src="images/Rzut poddasza1.png" alt="Rzut parteru">
             </div>
         </section>
         <section>
             <h2 id="zdjęcia"><strong>Zdjęcia</strong></h2>
-            <div class="table__overflow">
-                <table class="table" id="cennik">
-                    <caption class="caption">Cennik</caption>
-                    <tr class="table__row">
-                        <th class="table__cell table__cell--header table__cell--name" scope="col" rowspan="2">Cennik
-                            (wynajęcie całego domku)</th>
-                        <th class="table__cell table__cell--header" scope="col">Poza sezonem</th>
-                        <th class="table__cell table__cell--header" scope="col">Okres świąteczny</th>
-                        <th class="table__cell table__cell--header" scope="col">Ferie</th>
-                        <th class="table__cell table__cell--header" scope="col">Wakacje</th>
-                    </tr>
-                    <tr class="table__row">
-                        <td class="table__cell">1600zł/doba</th>
-                        <td class="table__cell">2000zł/doba</td>
-                        <td class="table__cell">1800zł/doba</td>
-                        <td class="table__cell">1800zł/doba</td>
-                    </tr>
-                </table>
-            </div>
+            <table class="table" id="cennik">
+                <caption class="caption">Cennik</caption>
+                <tr>
+                    <th class="table__cell table__cell--header" scope="col" rowspan="2">Cena wynajęcia całego domku</th>
+                    <th class="table__cell table__cell--header" scope="col">Poza sezonem</th>
+                    <th class="table__cell table__cell--header" scope="col">Okres świąteczny</th>
+                    <th class="table__cell table__cell--header" scope="col">Ferie</th>
+                    <th class="table__cell table__cell--header" scope="col">Wakacje</th>
+                </tr>
+                <tr>
+                    <td class="table__cell">1600zł/doba</th>
+                    <td class="table__cell">2000zł/doba</td>
+                    <td class="table__cell">1800zł/doba</td>
+                    <td class="table__cell">1800zł/doba</td>
+                </tr>
+            </table>
         </section>
         <section>
             <form class="form" action="https://postman-echo.com/post" method="POST">
@@ -183,24 +175,24 @@
         </section>
         <section>
             <h2 id="atrakcje-turystyczne">Atrakcje turystyczne</h2>
-            <div class="atrakcje">
+            <div class="attractions">
                 <div>Zamek w Niedzicy
-                    <p><img class="turystyka" src="images/zamek-niedzica.jpg" alt="Zamek w Niedzicy"></p>
+                    <p><img class="picture" src="images/zamek-niedzica.jpg" alt="Zamek w Niedzicy"></p>
                 </div>
                 <div>Zamek w Czorsztynie
-                    <p><img class="turystyka" src="images/zamek-czorsztyn.jpg" alt="Zamek w Czorsztynie"></p>
+                    <p><img class="picture" src="images/zamek-czorsztyn.jpg" alt="Zamek w Czorsztynie"></p>
                 </div>
                 <div>Zapora w Niedzicy
-                    <p><img class="turystyka" src="images/zapora-niedzica.jpg" alt="Zapora w Niedzicy"></p>
+                    <p><img class="picture" src="images/zapora-niedzica.jpg" alt="Zapora w Niedzicy"></p>
                 </div>
                 <div>Wyciąg narciarski "Polana Sosny"
-                    <p><img class="turystyka" src="images/stok.jpg" alt="Stok narciarski"></p>
+                    <p><img class="picture" src="images/stok.jpg" alt="Stok narciarski"></p>
                 </div>
                 <div>Spływ Dunajcem wzdłuż Trzech Koron
-                    <p><img class="turystyka" src="images/splyw dunajcem.jpg" alt="Splyw Dunajcem"></p>
+                    <p><img class="picture" src="images/splyw dunajcem.jpg" alt="Splyw Dunajcem"></p>
                 </div>
                 <div>Szlaki turystyczne po Tatrach
-                    <p><img class="turystyka" src="images/tatry.png" alt="Splyw Dunajcem"></p>
+                    <p><img class="picture" src="images/tatry.png" alt="Splyw Dunajcem"></p>
                 </div>
             </div>
         </section>

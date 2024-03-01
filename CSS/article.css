@@ -1,16 +1,9 @@
 .article {
     color: #333;
-    font: 25px/2 'Oswald', sans-serif;
+    font-family: "PT Sans Narrow", sans-serif;
 }
 
 .article__header {
-    margin: 0px 10px;
-    color: rgb(17, 69, 117);
-    font: 35px/2;
-    text-indent: 50px;
-}
-
-.article--header {
     font-size: 35px;
     font-weight: 800;
     color:rgb(17, 69, 117);
@@ -18,19 +11,23 @@
     font-style: italic;
 }
 
-.article__header--background {
-    background-color: rgb(208, 190, 168);
+.article__subheader {
+    margin: 0px 10px;
+    color: rgb(17, 69, 117);
+    font-size: 25px;
+    text-indent: 50px;
+    padding: 10px;
 }
 
-.article__header--boldItalic {
+.article__subheader--boldItalic {
     font-weight: 1000;
     font-style: italic;
     text-shadow: 2px 3px 3px #cfb2b2;;
 }
 
 @media (max-width: 767px) {
-    .article__header {
-        font: 15px/2 'Oswald', sans-serif;
+    .article__subheader {
+        font-size: 15px;
     }
 }
 

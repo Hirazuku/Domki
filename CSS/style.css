@@ -23,23 +23,6 @@ html {
 .dark {
     color: rgb(208, 201, 168);
     max-width: 4000px;
-    background-size: 100%;
-}
-
-.domki {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    flex-wrap: wrap;
-}
-
-.subHeader {
-    width: 100%;
-    font-size: 5px;
-    text-shadow: 5px #888;
-}
-
-.addition {
-    color: rgb(198, 192, 189);
 }
 
 .element {
@@ -49,61 +32,39 @@ html {
     margin: 0 auto;
 }
 
+.houses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+}
+
 .list {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
     list-style-type: none;
-    flex-wrap: wrap;
 }
 
-.atrakcje {
+.attractions {
     display: flex;
-    grid-template-columns: 300px 300px 300px;
-    align-items: space-around;
+    align-content: space-between;
     flex-wrap: wrap;
 }
 
-.turystyka {
+.picture {
     width: 300px;
     height: 200px;
     padding: 0 10px;
 }
 
 @media (max-width: 767px) {
-    .element {
-        width: 100%;
-        border: 4px solid rgba(114, 48, 4, 0.226);
-    }
-
     .container {
-        font: 15px/2 'Oswald', sans-serif;
+        font-size: 12px;
         width: 100%;
         padding: 0 5%;
     }
-
-    .list__item {
-        border: 4px solid rgba(114, 48, 4, 0.226);
-    }
 }
 
-@media (max-width: 1250px) {
+@media (min-width: 1500px) {
     .container {
-        background-size: 300%;
-    }
-    .dark {
-        background-size: 300%;
-    }
-}
-
-@media (min-width: 4000px) {
-    .container {
-        font-size: 75px;
-    }
-
-    .list__item {
-        padding: 75px;
+        font-size: 21px;
     }
 }

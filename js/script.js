@@ -2,9 +2,8 @@
     const onToggleBackgroundClick = () => {
         const body = document.querySelector(".container")
         const themeName = document.querySelector(".themeName")
-        // this specific command means we can make sth happen only after clicking at the button
-        body.classList.toggle("dark");//this function makes all page go to dark mode;
-        themeName.innerText = body.classList.contains("dark") ? "jasny" : "ciemny";//this instruction changes text inside the button;
+        body.classList.toggle("dark");
+        themeName.innerText = body.classList.contains("dark") ? "jasny" : "ciemny";
     };
 
     const dark = () => {
