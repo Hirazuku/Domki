@@ -1,7 +1,7 @@
 .link {
     margin: 20px;
     padding: 5px;
-    color: rgb(104, 62, 0);
+    color: rgb(0, 24, 104);
 }
 
 .link:visited {
@@ -14,7 +14,7 @@
 }
 
 .link:hover {
-    color: rgb(82, 5, 5);
+    color: rgb(255, 18, 18);
 }
 
 .link:active {
