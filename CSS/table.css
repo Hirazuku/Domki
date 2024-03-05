@@ -5,6 +5,7 @@
 }
 
 .table__cell {
+    width: 20%;
     border: 1px solid rgba(4, 42, 114, 0.226);
     padding: 15px;
     text-align: left;

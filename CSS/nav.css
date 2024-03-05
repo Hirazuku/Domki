@@ -6,11 +6,12 @@
 }
 
 .nav {
-    display: flex;
+    display: grid;
+    grid-gap: 0px 20px;
+    grid-template-columns: 300px repeat(auto-fill, minmax(100px, 1fr));
     max-width: 100%;
     width: 100%;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    padding: 10px;
 }
 
 .nav__item {
@@ -26,7 +27,14 @@
 }
 
 .nav__link:hover {
-    color:#cfb2b2;
+    color: #cfb2b2;
+}
+
+.logo {
+    width: 30%;
+    padding: 0 10px;
+    grid-row-start: 1;
+    grid-row-end: 9;
 }
 
 .addition {
