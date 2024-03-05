@@ -137,17 +137,19 @@
                     <p>
                         <label>
                             <span class="form__labelText">Okres rezerwacji</span>
-                            <input class="form__field form__field--box" name="okresRezerwacji" type="checkbox" checked>
+                            <select class="form__field js-RP" name="reservationPeriod">
+                                <option value="offSeason" class="form__field">Poza sezonem</option>
+                                <option value="christmas" class="form__field">Okres świąteczny</option>
+                                <option value="holidays" class="form__field">Ferie/Wakacje</option>
+                            </select>
                         </label>
                     </p>
                     <p>
                         <label>
                             <span class="form__labelText">Ilość dób</span>
-                            <input class="form__field" name="IloscDob" value="2">
+                            <input class="form__field js-NOD" type="number" name="numberOfDays" value="2">
                         </label>
                     </p>
-                    <button type="submit">Policz cenę</button>
-                    <p>Cena wynosi: <strong class="js-finalPrice"></strong> PLN</p>
                     <p>
                         <label>
                             <span class="form__labelText">E-mail do kontaktu*: </span>

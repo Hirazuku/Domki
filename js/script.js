@@ -33,21 +33,3 @@
     }
 
     sendForm();
-
-    const calculatePrice = (event) => {
-        event.preventDefault();
-
-        const usArea = document.querySelector(".js-PU");
-        const pricePerMeter = 250;
-        const price = pricePerMeter * usArea.value;
-        const finalPrice = document.querySelector(".js-finalPrice");
-        finalPrice.innerText = price;
-    };
-
-    const init = () => {
-            const money = document.querySelector(".js-price")
-            money.addEventListener("submit", calculatePrice)
-    };
-
-    init();
-}
