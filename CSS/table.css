@@ -1,0 +1,37 @@
+.table {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 4000px;
+}
+
+.table__cell {
+    width: 20%;
+    border: 1px solid rgba(4, 42, 114, 0.226);
+    padding: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.table__cell--header {
+    background-color: rgb(167, 173, 209, 0.589);
+    width: 20%;
+}
+
+.caption {
+    font-size: 25px;
+    font-weight: 900;
+    caption-side: top;
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+    .caption {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .caption {
+        font-size: 35px;
+    }
+}

@@ -1,0 +1,55 @@
+.button {
+    padding: 5px;
+    margin: auto;
+    color: rgb(17, 69, 117);
+    background-color: rgba(17, 69, 117, 0.205);
+    font-weight: 800;
+    box-shadow: 2px 3px 3px rgba(167, 173, 209, 0.589);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.button2 {
+    padding: 5px;
+    margin: auto;
+    color: rgb(17, 69, 117);
+    background-color: rgba(17, 69, 117, 0.205);
+    font-weight: 800;
+    box-shadow: 2px 3px 3px rgba(167, 173, 209, 0.589);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.button3 {
+    padding: 5px;
+    margin: auto;
+    color: rgb(17, 69, 117);
+    background-color: rgba(17, 69, 117, 0.205);
+    font-weight: 800;
+    box-shadow: 2px 3px 3px rgba(167, 173, 209, 0.589);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: rgba(161, 130, 61, 0.555);
+}
+
+.dark {
+    color: rgb(255, 255, 255);
+    max-width: 4000px;
+    background-color: #000000;
+}
+
+@media (max-width: 767px) {
+    .button {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 4000px) {
+    .button {
+        font-size: 75px;
+        padding: 25px;
+    }
+}

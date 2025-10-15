@@ -1,0 +1,71 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+/* every single element with its margins, paddings etc. will now be treated as a whole box for specifications like width, high etc.*/
+
+.container {
+    font-family: "PT Sans Narrow", sans-serif;
+    margin: 0 auto;
+    padding: 10px 10%;
+    max-width: 4000px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.dark {
+    color: rgb(255, 255, 255);
+    max-width: 4000px;
+    background-color: #000000;
+}
+
+.element {
+    display: block;
+    width: 100%;
+    max-width: 4000px;
+    margin: 0 auto;
+}
+
+.houses {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+}
+
+.list {
+    width: 100%;
+    list-style-type: none;
+}
+
+.attractions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    flex-wrap: wrap;
+    grid-gap: 10px 10px;
+}
+
+.picture {
+    width: 300px;
+    height: 200px;
+}
+
+@media (max-width: 767px) {
+    .container {
+        font-size: 12px;
+        width: 100%;
+        padding: 0 5%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .container {
+        font-size: 21px;
+    }
+}

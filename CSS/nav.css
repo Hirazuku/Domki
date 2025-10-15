@@ -1,0 +1,54 @@
+.header {
+    font-family: "PT Sans Narrow", sans-serif;
+    color: rgb(17, 69, 117);
+    text-shadow: 2px 3px 3px #cfb2b2;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav {
+    display: grid;
+    grid-gap: 0px 20px;
+    grid-template-columns: 300px repeat(auto-fill, minmax(150px, 1fr));
+    padding: 10px;
+}
+
+.nav__item {
+    padding: 5px 10px;
+}
+
+.nav__link {
+    color: rgb(38, 84, 153);
+    font-weight: 800;
+    font-size: 20px;
+    text-decoration: none;
+    /* nav will function as a block element */
+}
+
+.nav__link:hover {
+    color: #cfb2b2;
+}
+
+.logo {
+    width: 30%;
+    padding: 0 10px;
+    grid-row-start: 1;
+    grid-row-end: 9;
+}
+
+.addition {
+    color: rgb(198, 192, 189);
+}
+
+@media (max-width: 767px) {
+    .nav__link {
+        font-size: 12px;
+        padding: 2px 2px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .nav__link {
+        font-size: 21px;
+        padding: 25px;
+    }
+}

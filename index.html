@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="images/Logo_ElKowalczyk.png">
+    <title>Spiskie Tarasy</title>
+    <link rel="icon" href="images/Logo_ElKowalczyk.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="CSS/style.css" rel="stylesheet">
+    <link href="CSS/nav.css" rel="stylesheet">
+    <link href="CSS/table.css" rel="stylesheet">
+    <link href="CSS/link.css" rel="stylesheet">
+    <link href="CSS/button.css" rel="stylesheet">
+    <link href="CSS/article.css" rel="stylesheet">
+    <link href="CSS/form.css" rel="stylesheet">
+    <script defer src="js/script.js">
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo"><img src="images/Logo ElKowalczyk.png" alt="Logo El Kowalczyk"></div>
+            <div class="nav__item">
+                <a class="nav__link" href="#o-nas">O NAS</a>
+            </div>
+            <div class="nav__item">
+                <a class="nav__link" href="#domki">DOMKI</a>
+            </div>
+            <div class="nav__item">
+                <a class="nav__link" href="#zdjęcia">ZDJĘCIA</a>
+            </div>
+            <div class="nav__item">
+                <a class="nav__link" href="#cennik">CENNIK</a>
+            </div>
+            <div class="nav__item">
+                <a class="nav__link" href="#rezerwacja">REZERWACJA</a>
+            </div>
+            <div class="nav__item">
+                <a class="nav__link" href="#atrakcje-turystyczne">ATRAKCJE TURYSTYCZNE</a>
+            </div>
+            <div class="nav__item">
+                <a class="nav__link" href="#lokalizacja">LOKALIZACJA</a>
+            </div>
+            <div class="nav__item">
+                <a class="nav__link" href="#kontakt">KONTAKT</a>
+            </div>
+        </nav>
+        <hr>
+    </header>
+    <main class="container">
+        <button class="button">Włącz <span class="themeName">ciemny</span> motyw</button>
+        <form action="https://postman-echo.com/post" method="POST">
+            <p>
+                <label> Wyszukaj: <input name="Wyszukiwarka" value="Kontakt"></label>
+                <button>Szukaj</button>
+            </p>
+        </form>
+        <article class="article">
+            <h1 class="article article__header">"Spiskie Tarasy"</h1>
+            <h2 id="o-nas">O nas</h2>
+            <p><img class="element" src="images/Domki.jpg" alt="Zdjęcie działki"></p>
+            <div class="article__subheader article__subheader--boldItalic">
+                Zapraszamy do naszych domków letniskowych w Niedzicy!
+            </div>
+            <div class="article__subheader">Nowopowstałe domki w pięknej miejscowości, jaką jest Niedzica, czekają na
+                lokatorów. Zapraszamy zarówno w wakacje jak i zimą, a także poza sezonem. Jesteśmy na Was otwarci cały
+                rok.
+            </div>
+        </article>
+        <hr>
+        <section>
+            <h2 id="domki">Prezentacja domków</h2>
+            <div class="houses"><img class="element" src="images/Elewacja południowa1.png" alt="Elewacja południowa">
+                <ol class="list">
+                    <li><b>Schemat domku 5mx7m: </b>
+                        <ul>
+                            <li>Max dla 5 osób (jedno posłanie sofa na parterze)</li>
+                            <li>Parter (pow. uż. 24,97m2): </li>
+                            <ul>
+                                <li>pokój dzienny</li>
+                                <li>łazienka</li>
+                                <li>kuchnia</li>
+                            </ul>
+                            <li>Piętro (pow. uż. 24,54m2): </li>
+                            <ul>
+                                <li>przedpokój</li>
+                                <li>WC</li>
+                                <li>2 pokoje 2-osobowe (jeden z łożem małżeńskim)</li>
+                            </ul>
+                            <li>Taras</li>
+                            <li>Balkon</li>
+                            <li>Media</li>
+                            <li>Ogrzewanie podłogowe</li>
+                            <li>Parking</li>
+                            <li>Grill</li>
+                            <li>Miejsce na wypoczynek</li>
+                            <li>Plac zabaw</li>
+                        </ul>
+                </ol>
+            </div>
+            <div class="houses"><img class="element" src="images/Rzut parteru1.png" alt="Rzut parteru">
+                <img class="element" src="images/Rzut poddasza1.png" alt="Rzut parteru">
+            </div>
+        </section>
+        <section>
+            <h2 id="zdjęcia"><strong>Zdjęcia</strong></h2>
+            <table class="table" id="cennik">
+                <caption class="caption">Cennik</caption>
+                <tr>
+                    <th class="table__cell table__cell--header" scope="col" rowspan="2">Cena wynajęcia całego domku</th>
+                    <th class="table__cell table__cell--header" scope="col">Poza sezonem</th>
+                    <th class="table__cell table__cell--header" scope="col">Okres świąteczny</th>
+                    <th class="table__cell table__cell--header" scope="col">Ferie</th>
+                    <th class="table__cell table__cell--header" scope="col">Wakacje</th>
+                </tr>
+                <tr>
+                    <td class="table__cell">1600zł/doba</th>
+                    <td class="table__cell">2000zł/doba</td>
+                    <td class="table__cell">1800zł/doba</td>
+                    <td class="table__cell">1800zł/doba</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <form class="form" action="https://postman-echo.com/post" method="POST">
+                <fieldset>
+                    <legend id="rezerwacja" class="form__legend">Rezerwacja:</legend>
+                    <p>
+                        <label>
+                            <span class="form__labelText">Okres rezerwacji</span>
+                            <select class="form__field js-RP" name="reservationPeriod">
+                                <option value="offSeason" class="form__field">Poza sezonem</option>
+                                <option value="christmas" class="form__field">Okres świąteczny</option>
+                                <option value="holidays" class="form__field">Ferie/Wakacje</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <span class="form__labelText">Ilość dób</span>
+                            <input class="form__field js-NOD" type="number" name="numberOfDays" value="2">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <span class="form__labelText">E-mail do kontaktu*: </span>
+                            <input class="form__field" type="email" name="email" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <span class="form__labelText">Nr telefonu do kontaktu*: </span>
+                            <input class="form__field" type="tel" name="tel" maxlength="9" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <span class="form__labelText">Załącz pliki </span>
+                            <input class="form__field" type="file" name="plik" multiple>
+                        </label>
+                    </p>
+                    <button class="button2">Wyślij formularz</button>
+                    <button type="reset" class="button3">Wyczyść formularz</button>
+                    </label>
+                    </ul>
+            </form>
+            </fieldset>
+        </section>
+        <section>
+            <h2 id="atrakcje-turystyczne">Atrakcje turystyczne</h2>
+            <div class="attractions">
+                <div>Zamek w Niedzicy
+                    <p><img class="picture" src="images/zamek-niedzica.jpg" alt="Zamek w Niedzicy"></p>
+                </div>
+                <div>Zamek w Czorsztynie
+                    <p><img class="picture" src="images/zamek-czorsztyn.jpg" alt="Zamek w Czorsztynie"></p>
+                </div>
+                <div>Zapora w Niedzicy
+                    <p><img class="picture" src="images/zapora-niedzica.jpg" alt="Zapora w Niedzicy"></p>
+                </div>
+                <div>Wyciąg narciarski "Polana Sosny"
+                    <p><img class="picture" src="images/stok.jpg" alt="Stok narciarski"></p>
+                </div>
+                <div>Spływ Dunajcem wzdłuż Trzech Koron
+                    <p><img class="picture" src="images/splyw dunajcem.jpg" alt="Splyw Dunajcem"></p>
+                </div>
+                <div>Szlaki turystyczne po Tatrach
+                    <p><img class="picture" src="images/tatry.png" alt="Splyw Dunajcem"></p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 id="lokalizacja">Lokalizacja</h2>
+            <p><a class="link" rel="noreferrer noopener" target="_blank"
+                    href="https://www.google.com/maps/place/Kanada+42,+34-441+Niedzica/@49.4147006,20.3102621,17z/data=!4m6!3m5!1s0x473e025ff35a920d:0xab98355f0c4dfd2e!8m2!3d49.4147006!4d20.3102621!16s%2Fg%2F11hdnkrrq1?authuser=0"
+                    title="Lokalizacja">
+                    Lokalizacja </a>
+            </p>
+        </section>
+    </main>
+    <footer class="container" id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Nr telefonu: 889 278 522
+        </p>
+        <p>email: michalkowal3k@gmail.com
+        </p>
+    </footer>
+</body>
+
+</html>

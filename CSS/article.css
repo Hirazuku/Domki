@@ -1,0 +1,44 @@
+.article {
+    color: #333;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+.article__header {
+    font-size: 35px;
+    font-weight: 800;
+    color:rgb(17, 69, 117);
+    text-shadow: 2px 3px 3px #cfb2b2;
+    font-style: italic;
+}
+
+.article__subheader {
+    margin: 0px 10px;
+    color: rgb(17, 69, 117);
+    font-size: 25px;
+    text-indent: 50px;
+    padding: 10px;
+    text-shadow: 2px 3px 3px #cfb2b2;
+}
+
+.article__subheader--boldItalic {
+    font-weight: 1000;
+    font-style: italic;
+}
+
+.dark {
+    color: rgb(255, 255, 255);
+    max-width: 4000px;
+    background-color: #000000;
+}
+
+@media (max-width: 767px) {
+    .article__subheader {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 4000px) {
+    .article__header {
+        font-size: 75px;
+    }
+}

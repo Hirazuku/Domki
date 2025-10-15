@@ -1,0 +1,22 @@
+.link {
+    margin: 20px;
+    padding: 5px;
+    color: rgb(0, 24, 104);
+}
+
+.link:visited {
+    color: rgb(104, 62, 0);
+    list-style-type: disc;
+}
+
+.link:focus {
+    outline: 2px solid currentColor
+}
+
+.link:hover {
+    color: rgb(255, 18, 18);
+}
+
+.link:active {
+    color: rgb(160, 9, 9);
+}
