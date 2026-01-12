@@ -1,4 +1,8 @@
 {
+    function showAlert() {
+        alert("Kliknąłeś w przycisk 2 sekundy temu");
+    }
+
     const onToggleBackgroundClick = () => {
         const body = document.querySelector(".container")
         const article = document.querySelector(".article")
@@ -12,6 +16,7 @@
         button2.classList.toggle("dark");
         button3.classList.toggle("dark");
         themeName.innerText = body.classList.contains("dark") ? "jasny" : "ciemny";
+        setTimeout(showAlert, 2 * 1000);
     };
 
     function dark() {
