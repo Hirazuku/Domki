@@ -3,17 +3,21 @@
     color: rgb(17, 69, 117);
     text-shadow: 2px 3px 3px #cfb2b2;
     background-color: rgb(255, 255, 255);
+    width: 100%;
 }
 
 .nav {
     display: grid;
     grid-gap: 0px 20px;
-    grid-template-columns: 300px repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: 200px repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-rows: 1fr;
     padding: 10px;
+    width: 100%;
 }
 
 .nav__item {
     padding: 5px 10px;
+    align-content: center;
 }
 
 .nav__link {
@@ -21,7 +25,7 @@
     font-weight: 800;
     font-size: 20px;
     text-decoration: none;
-    /* nav will function as a block element */
+    
 }
 
 .nav__link:hover {

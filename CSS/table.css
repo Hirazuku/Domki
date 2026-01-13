@@ -1,7 +1,5 @@
 .table {
     width: 100%;
-    margin: 0 auto;
-    max-width: 4000px;
 }
 
 .table__cell {
@@ -27,6 +25,9 @@
 @media (max-width: 767px) {
     .caption {
         font-size: 18px;
+    }
+    .table_cell {
+        font-size: 8px;
     }
 }
 

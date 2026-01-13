@@ -10,11 +10,16 @@ html {
 
 /* every single element with its margins, paddings etc. will now be treated as a whole box for specifications like width, high etc.*/
 
+.body {
+    width: 100%;
+    margin: 0;
+}
+
 .container {
+    width: 100%;
     font-family: "PT Sans Narrow", sans-serif;
     margin: 0 auto;
-    padding: 10px 10%;
-    max-width: 4000px;
+    padding: 10px;
     color: #000000;
     background-color: rgb(255, 255, 255);
     font-size: 18px;
@@ -30,13 +35,13 @@ html {
     display: block;
     width: 100%;
     max-width: 4000px;
-    margin: 0 auto;
 }
 
 .houses {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .list {
