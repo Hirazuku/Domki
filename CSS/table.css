@@ -26,8 +26,8 @@
     .caption {
         font-size: 18px;
     }
-    .table_cell {
-        font-size: 8px;
+    .table__cell {
+        padding: 5px;
     }
 }
 
